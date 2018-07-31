@@ -9,10 +9,10 @@ const queue = new Map();
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-    console.log(`in ${client.guilds.size} servers `)
-    console.log(`[-] ${client.users.size}`)
-    client.user.setStatus("idle")
+  client.user.setGame('*Alsa7r','https://www.twitch.tv/peery13');
+  console.log('---------------');
+  console.log(' Bot Is Online')
+  console.log('---------------')
 });
 
 const prefix = "$"
@@ -259,5 +259,12 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
     
    }
    }); 
+
+
+
+
+
+
+
    
 client.login(process.env.BOT_TOKEN);
